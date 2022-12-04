@@ -5,8 +5,6 @@ def solve(lines=None):
     if not lines:
         lines = get_data(sys.argv)
 
-    print(lines[:5])
-
     pairs = [line.split(',') for line in lines]
 
     count1 = 0; count2 = 0
