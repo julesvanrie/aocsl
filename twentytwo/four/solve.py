@@ -2,10 +2,9 @@ import os, sys, timeit
 from aochelper import get_data
 
 def solve(lines=None):
-    if not lines:
-        lines = get_data(sys.argv)
+    text = lines if lines else get_data(sys.argv)
 
-    pairs = [line.split(',') for line in lines]
+    pairs = [line.split(',') for line in text.split('\n')]
 
     count1 = 0; count2 = 0
     for l, r in pairs:
